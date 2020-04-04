@@ -7,7 +7,7 @@ import { DashboardComponent } from './dashboard.component';
 import { DashboardRoutes } from './dashboard.routing';
 import { ChartistModule } from 'ng-chartist';
 import { MapComponent } from './map/map.component';
-import { ConfigService } from '../shared/config/config.service';
+import { HttpService } from '../shared/config/http.service';
 
 
 @NgModule({
@@ -19,7 +19,7 @@ import { ConfigService } from '../shared/config/config.service';
     RouterModule.forChild(DashboardRoutes)
   ],
   providers:[
-    ConfigService
+    HttpService
   ],
   declarations: [DashboardComponent, MapComponent]
 })

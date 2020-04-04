@@ -1,5 +1,5 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { ConfigService } from '../shared/config/config.service';
+import { HttpService } from '../shared/config/http.service';
 import * as Chartist from 'chartist';
 import { ChartType, ChartEvent } from 'ng-chartist';
 declare var require: any;
@@ -22,7 +22,7 @@ export interface Chart {
 export class DashboardComponent implements AfterViewInit {
 
 	constructor(
-		private config: ConfigService
+		private http: HttpService
 	){}
 	ngAfterViewInit() {}
 
@@ -75,7 +75,7 @@ export class DashboardComponent implements AfterViewInit {
 	};
 
 	ngOnInit(){
-		this.config.get('prueba').subscribe(
+		this.http.get('prueba', {"username": "Manu"}).subscribe(
 			result => {
 				console.log(result);
 			}
