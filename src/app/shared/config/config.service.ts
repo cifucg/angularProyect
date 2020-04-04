@@ -3,7 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable()
 export class ConfigService {
-    api = 'https://gnpzznxtr7.execute-api.us-east-1.amazonaws.com/dev/'
+    api = 'https://gnpzznxtr7.execute-api.us-east-1.amazonaws.com/dev/' //Change to the api of each user
     /* httpOptions = {
         headers: new HttpHeaders({
         'Content-Type': 'application/json',
