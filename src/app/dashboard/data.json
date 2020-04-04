@@ -1,0 +1,10 @@
+{
+  "Bar": {
+    "labels": ["Angular", "DataBase", "Computer Vision", "Data Science", "Python", "ROS", "Latex", "Linux"],
+    "series": [[9, 6.5, 7.25, 7.75, 8.5, 5, 6.75, 7]]
+  },
+  "Pie": {
+    "labels": ["Python", "AWS", "Machine Learning", "Angular"],
+    "series": [20, 10, 20, 50]
+  }
+}
